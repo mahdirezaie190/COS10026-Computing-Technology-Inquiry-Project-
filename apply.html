@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            margin:20px;
+        }
+        .name div{
+            display:inline-block;
+            margin:0;
+            padding:0;
+
+        }
+        button{
+            padding:10px;
+        }
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+            
+        }
+        #name li{
+            display:inline-block;
+            margin:0;
+        }
+        label{
+            font-weight:bold ;
+        }
+        input{
+            margin-bottom:1em;
+        }
+        #gendertext{
+            font-weight:normal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>job application form</h1>
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="refnum">Job Reference Number</label><br>
+        <input type="text" id="refnum" required="required" minlength="5" maxlength="5" ><br>
+  
+        <label for="title">Title</label><br>
+        <select name="title" id="title">
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+        </select>
+
+            <ul id="name">
+                <li>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" required="required" maxlength="20">
+                </li>
+
+                <li>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" required="required" maxlength="20">
+                </li>
+            </ul>
+
+  
+        <label for="birthdate">Date of Birth</label><br>
+        <input type="date" id="birthdate"><br>
+    
+        <label>Gender:</label><br>
+        <input type="radio" id="male" >
+        <label for="male" id="gendertext">Male</label>
+        <input type="radio" id="female" >
+        <label for="female" id="gendertext">Female</label>
+        <input type="radio" id="other" >
+        <label for="other" id="gendertext">Other</label>
+    </fieldset>
+   
+    <fieldset>
+        <legend>Address Details</legend>
+        <label for="street">Street</label><br>
+        <input type="text" id="street" required="required" maxlength="40"><br>
+        <label for="suburb">Suburb</label><br>
+        <input type="text" id="suburb" required="required" maxlength="40"><br>
+ 
+        <label for="state">State</label><br>
+        <select name="state" id="state">
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+        </select>
+        <br>
+        <label for="postcode">Postcode</label><br>
+        <input type="text" id="postcode" required="required" minlength="4" maxlength="4" ><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" required="required"><br>
+
+        <label>Contact Number</label><br>
+        <input type="tel" id="number" minlength="8" maxlength="12">
+        <br>
+        <label for="skills">Select the skill(s) that you possess for this position:</label><br>
+        <ul id="checklist">
+        <li>
+            <input type="checkbox" name="skill1" >
+            <p>Good understanding of web markup languages (HTML5/CSS)</p>
+        </li>
+        <li>
+            <input type="checkbox" name="skill2" >
+            <p>Experience with Vue and React frameworks</p>
+        </li>
+
+        <li>
+            <input type="checkbox" name="skill3" >
+            <p>Familiarity with cross-browser testing </p>
+        </li>
+
+        <li>
+            <input type="checkbox" name="skill4" >
+        </li>
+
+        <li>
+             <input type="checkbox" name="skill5" >
+             <p>blank</p>
+
+        </li>
+
+        <li>
+            <label>Other skills: </label><br>
+            <textarea>
+
+            </textarea>
+        </li>
+        </ul>
+   </fieldset>
+    <button>Submit</button>
+    
+    
+
+</form>
+
+    
+</body>
+<footer>
+
+</footer>
+</html>
