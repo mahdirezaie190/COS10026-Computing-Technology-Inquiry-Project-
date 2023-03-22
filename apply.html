@@ -43,11 +43,11 @@
 </head>
 <body>
     <h1>job application form</h1>
-<form>
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
     <fieldset>
         <legend>Personal Details</legend>
         <label for="refnum">Job Reference Number</label><br>
-        <input type="text" id="refnum" required="required" minlength="5" maxlength="5" ><br>
+        <input type="text" name="refnum" id="refnum" required="required" minlength="5" maxlength="5" ><br>
   
         <label for="title">Title</label><br>
         <select name="title" id="title">
@@ -60,26 +60,26 @@
             <ul id="name">
                 <li>
                     <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" required="required" maxlength="20">
+                    <input type="text" name="fname" id="fname" required="required" maxlength="20">
                 </li>
 
                 <li>
                     <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" required="required" maxlength="20">
+                    <input type="text" name="lname" id="lname" required="required" maxlength="20">
                 </li>
             </ul>
 
   
         <label for="birthdate">Date of Birth</label><br>
-        <input type="date" id="birthdate"><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
     
         <label>Gender:</label><br>
         <input type="radio" id="male" >
-        <label for="male" id="gendertext">Male</label>
-        <input type="radio" id="female" >
-        <label for="female" id="gendertext">Female</label>
+        <label for="male" name="gender" id="gendertext">Male</label>
+        <input type="radio"  id="female" >
+        <label for="female" name="gender" id="gendertext">Female</label>
         <input type="radio" id="other" >
-        <label for="other" id="gendertext">Other</label>
+        <label for="other" name = "gender" id="gendertext">Other</label>
     </fieldset>
    
     <fieldset>
@@ -113,38 +113,38 @@
         <label for="skills">Select the skill(s) that you possess for this position:</label><br>
         <ul id="checklist">
         <li>
-            <input type="checkbox" name="skill1" >
+            <input type="checkbox" name="skill[]" >
             <p>Good understanding of web markup languages (HTML5/CSS)</p>
         </li>
         <li>
-            <input type="checkbox" name="skill2" >
+            <input type="checkbox" name="skill[]" >
             <p>Experience with Vue and React frameworks</p>
         </li>
 
         <li>
-            <input type="checkbox" name="skill3" >
+            <input type="checkbox" name="skill[]" >
             <p>Familiarity with cross-browser testing </p>
         </li>
 
         <li>
-            <input type="checkbox" name="skill4" >
+            <input type="checkbox" name="skill[]" >
         </li>
 
         <li>
-             <input type="checkbox" name="skill5" >
+             <input type="checkbox" name="skill[]" >
              <p>blank</p>
 
         </li>
 
         <li>
             <label>Other skills: </label><br>
-            <textarea>
+            <textarea name="other skills">
 
             </textarea>
         </li>
         </ul>
    </fieldset>
-    <button>Submit</button>
+   <input type= "submit" value="Submit"/>
     
     
 
