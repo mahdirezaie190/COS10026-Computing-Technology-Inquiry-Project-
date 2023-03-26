@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -88,35 +89,53 @@
 .btn:hover{
     background-color: white;
 }
-#css for apply.html
-form{
-            margin:20px;
-        }
-        .name div{
-            display:inline-block;
-            margin:0;
-            padding:0;
 
-        }
-        button{
-            padding:10px;
-        }
-        ul{
-            list-style: none;
-            margin:0;
-            padding:0;
-            
-        }
-        #name li{
-            display:inline-block;
-            margin:0;
-        }
-        label{
-            font-weight:bold ;
-        }
-        input{
-            margin-bottom:1em;
-        }
-        #gendertext{
-            font-weight:normal;
-        }
+
+/*css for apply.html */
+
+h1{
+    margin-left:20px;
+}
+form{
+    margin:20px;
+    background-color: white;
+   
+}
+
+form ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+#name li{
+    display:inline-block;
+    margin:0;
+}
+form label{
+    font-weight:600 ;
+}
+form input{
+    margin-bottom:1em;
+}
+#gendertext{
+    font-weight:normal;
+}
+
+#submit{
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 0px rgba(140, 132, 136, 0.65);
+    
+}
+
+#submit:hover{
+    background-color: lightblue;
+}
+#checklist{
+    margin-top: 5px;
+}
+#checklist label{
+    font-weight:normal;
+}
