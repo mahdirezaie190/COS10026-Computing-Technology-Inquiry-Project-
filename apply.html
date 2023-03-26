@@ -6,46 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apply</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        form{
-            margin:20px;
-        }
-        .name div{
-            display:inline-block;
-            margin:0;
-            padding:0;
 
-        }
-        button{
-            padding:10px;
-        }
-        ul{
-            list-style: none;
-            margin:0;
-            padding:0;
-            
-        }
-        #name li{
-            display:inline-block;
-            margin:0;
-        }
-        label{
-            font-weight:bold ;
-        }
-        input{
-            margin-bottom:1em;
-        }
-        #gendertext{
-            font-weight:normal;
-        }
-    </style>
 
 </head>
 <body>
     <h1>job application form</h1>
+
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
     <fieldset>
-        <legend>Personal Details</legend>
+        <legend>Job Application Form</legend>
         <label for="refnum">Job Reference Number</label><br>
         <input type="text" name="refnum" id="refnum" required="required" minlength="5" maxlength="5" ><br>
   
@@ -74,21 +43,16 @@
         <input type="date" id="birthdate" name="birthdate"><br>
     
         <label>Gender:</label><br>
-        
         <input type="radio" id="male" name="gender" checked="checked">
         <label for="male" id="gendertext">Male</label>
-        
         <input type="radio" name="gender" id="female" >
         <label for="female" id="gendertext">Female</label>
-        
         <input type="radio" name="gender" id="other" >
-        <label for="other"  id="gendertext">Other</label>
-        
-    </fieldset>
-   
-    <fieldset>
-        <legend>Address Details</legend>
-        <label for="street">Street</label><br>
+        <label for="other"  id="gendertext">Other</label><br>
+
+       <!--address section -->
+
+       <label for="street">Street</label><br>
         <input type="text" id="street" required="required" maxlength="40"><br>
         <label for="suburb">Suburb</label><br>
         <input type="text" id="suburb" required="required" maxlength="40"><br>
@@ -105,6 +69,7 @@
             <option value="ACT">ACT</option>
         </select>
         <br>
+        <br>
         <label for="postcode">Postcode</label><br>
         <input type="text" id="postcode" required="required" minlength="4" maxlength="4" ><br>
 
@@ -118,25 +83,26 @@
         <ul id="checklist">
         <li>
             <input type="checkbox" name="skill[]" >
-            <p>Good understanding of web markup languages (HTML5/CSS)</p>
+            <label for="skill[]">Good understanding of web markup languages (HTML5/CSS)</label>
         </li>
         <li>
             <input type="checkbox" name="skill[]" >
-            <p>Experience with Vue and React frameworks</p>
-        </li>
-
-        <li>
-            <input type="checkbox" name="skill[]" >
-            <p>Familiarity with cross-browser testing </p>
+            <label for="skills">Experience with Vue and React frameworks</label><br>
         </li>
 
         <li>
             <input type="checkbox" name="skill[]" >
+            <label for="skills">Familiarity with cross-browser testing</label><br>
+        </li>
+
+        <li>
+            <input type="checkbox" name="skill[]" >
+            <label for="skills">Experience with company network management</label><br>
         </li>
 
         <li>
              <input type="checkbox" name="skill[]" >
-             <p>blank</p>
+             <label for="skills">Proficient network and debugging skills</label><br>
 
         </li>
 
@@ -147,12 +113,14 @@
             </textarea>
         </li>
         </ul>
-   </fieldset>
-   <input type= "submit" value="Submit"/>
+    </fieldset>
+   
+   <input type= "submit" value="SUBMIT" id="submit"/>
     
     
 
 </form>
+
 
     
 </body>
