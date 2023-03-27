@@ -92,45 +92,130 @@
 
 /*css for apply.html */
 
-form {
-  margin: 20px;
-  background-color: white;
+#applypage{
+    background-color: blanchedalmond;
 }
 
-form ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#name li {
-  display: inline-block;
-  margin: 0;
-}
-form label {
-  font-weight: 600;
-}
-form input {
-  margin-bottom: 1em;
-}
-#gendertext {
-  font-weight: normal;
+form{
+    margin:20px;
+   
+    
 }
 
-#submit {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 2px 0px rgba(140, 132, 136, 0.65);
+fieldset{
+    background-color: white;
+}
+form ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+#name li{
+    display:inline-block;
+    margin:0;
+}
+form label{
+    font-weight:600 ;
+}
+form input{
+    margin-bottom:1em;
+}
+#gendertext{
+    font-weight:normal;
 }
 
-#submit:hover {
-  background-color: lightblue;
+#submit{
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 0px rgba(140, 132, 136, 0.65);
+    
 }
-#checklist {
-  margin-top: 5px;
+
+#submit:hover{
+    background-color: lightblue;
 }
-#checklist label {
-  font-weight: normal;
+#checklist{
+    margin-top: 5px;
+}
+#checklist label{
+    font-weight:normal;
+}
+
+
+
+
+/* css for about.html */
+
+#aboutpage{
+    margin:2em;
+}
+table{
+    margin: 20px;
+}
+table, th, td{
+    border:1px solid black;
+    padding:8px;
+    height:5px;
+    text-transform: capitalize;
+    border-collapse: collapse;
+}
+
+.group{
+    border:1px solid black;
+    margin-bottom: 2em;
+}
+.group h3{
+    margin-left: 20px;
+}
+.group img{
+    display: block;
+    margin-top:2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.group dt{
+    margin-left: 20px;
+}
+
+dl{
+    font-size: 20px;
+}
+dt{
+    text-align: right;
+    float:left;
+    font-weight: 600;
+    margin-right: 5px;
+    color:red;
+   
+   
+}
+dd{
+    margin-bottom: 10px;
+    font-weight: 500;
+
+}
+
+.profile{
+    border:2px solid black;
+    box-shadow: 5px 5px 10px gray;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 2em;
+
+}
+.col1{
+    width:40%;
+}
+.col1, .col2{
+   margin:20px;
+}
+
+.col2 img{
+    width:250px;
+    height:300px;
 }
 
 /* nav css */
