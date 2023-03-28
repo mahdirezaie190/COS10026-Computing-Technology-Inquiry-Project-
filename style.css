@@ -9,9 +9,101 @@
     url("image.webp");
   width: 100%;
   height: 100vh;
-  
-/* css for navbar */
 }
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+  }
+}
+
+.text {
+  width: 100;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+}
+.text h4 {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.text h1 {
+  font-weight: 700;
+  font-size: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 40px 0px;
+}
+.text h3 {
+  font-weight: 750;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0.164);
+  color: white;
+  border: none;
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  line-height: 50px;
+  width: 200px;
+  margin-top: 25px;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+  opacity: 0.5;
+}
+a:link { 
+  text-decoration: none;
+}
+a:visited { 
+  text-decoration: none; color: white; 
+}
+
+footer{
+  padding: 80px 400px;
+}
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #dd47a4;
+  color: white;
+}
+.company h1 {
+  font-size: 20px;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fa-computer {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 10px;
+}
+/* css for index.html */
+
+/* css for navbar */
 nav{
   background-color: rgba(0, 0, 0, 0.541);
   padding: 15px 65px;
@@ -73,95 +165,6 @@ nav ul li i{
   font-size: 23px;
 }
 /* css for navbar */
-
-@media all and (max-width: 900px){
-  nav{
-    padding: 5px 30px;
-  }
-  nav ul li.items{
-    width: 100%;
-  }
-}
-
-.text {
-  width: 100;
-  margin-top: 250px;
-  text-align: center;
-  color: white;
-}
-.text h4 {
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.text h1 {
-  font-weight: 700;
-  font-size: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 40px 0px;
-}
-.text h3 {
-  font-weight: 750;
-  font-size: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.btn {
-  background-color: rgba(255, 255, 255, 0.164);
-  color: white;
-  border: none;
-  font-size: 19px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: bold;
-  line-height: 50px;
-  width: 200px;
-  margin-top: 25px;
-  border: 3px solid white;
-  cursor: pointer;
-  border-radius: 12px;
-}
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.212);
-  opacity: 0.5;
-}
-a:link { 
-  text-decoration: none; 
-}
-footer{
-  padding: 80px 400px;
-}
-.fa {
-  padding: 15px;
-  font-size: 40px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-instagram {
-  background: #dd47a4;
-  color: white;
-}
-.company h1 {
-  font-size: 20px;
-  padding: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.fa-computer {
-  font-size: 30px;
-  color: #ffffff;
-  padding: 10px;
-}
-/* css for index.html */
 
 /*css for apply.html */
 
