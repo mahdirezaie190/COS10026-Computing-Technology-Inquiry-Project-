@@ -165,7 +165,9 @@ nav ul li i{
   font-size: 23px;
 }
 /* css for navbar */
-
+*{
+    font-family: -apple-system, BlinkMacSystemFont, san-serif;
+}
 /*css for apply.html */
 
 #applypage{
@@ -219,11 +221,11 @@ form input{
     font-weight:normal;
 }
 
-/*css for apply.html */
 
 
 
 /* css for about.html */
+
 #aboutpage{
     margin:2em;
 }
@@ -263,7 +265,7 @@ dt{
     float:left;
     font-weight: 600;
     margin-right: 5px;
-    color:red;
+    color:rgb(13, 22, 146);
    
    
 }
@@ -271,6 +273,14 @@ dd{
     margin-bottom: 10px;
     font-weight: 500;
 
+}
+
+dl a {
+    text-decoration: none;
+    
+}
+dl a:hover{
+    color:rgb(91, 86, 86);
 }
 
 .profile{
@@ -290,8 +300,6 @@ dd{
 }
 
 .col2 img{
-    width:250px;
+    width:260px;
     height:300px;
 }
-/* css for about.html */
-
