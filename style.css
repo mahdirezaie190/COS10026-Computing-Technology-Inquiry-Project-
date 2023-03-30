@@ -1,4 +1,3 @@
-/* css for index.html */
 * {
   margin: 0px;
   padding: 0px;
@@ -9,14 +8,6 @@
     url("image.webp");
   width: 100%;
   height: 100vh;
-}
-@media all and (max-width: 900px){
-  nav{
-    padding: 5px 30px;
-  }
-  nav ul li.items{
-    width: 100%;
-  }
 }
 
 .text {
@@ -79,28 +70,7 @@ footer{
 .fa:hover {
   opacity: 0.7;
 }
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-instagram {
-  background: #dd47a4;
-  color: white;
-}
-.company h1 {
-  font-size: 20px;
-  padding: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.fa-computer {
-  font-size: 30px;
-  color: #ffffff;
-  padding: 10px;
-}
+
 /* css for index.html */
 
 /* css for navbar */
@@ -109,15 +79,19 @@ nav{
   padding: 15px 65px;
 }
 nav ul{
-  font-size: 23px;
+  font-size: 40px;
   font-weight: 600;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+nav ul li.logo{
+  font-size: 35px;
+  padding: 18px 0;
+}
 nav ul li{
-  padding: 16px 0;
+  padding: 25px 0;
   align-items: center;
   justify-content: center;
 }
@@ -144,12 +118,6 @@ nav ul li.items:hover:after{
   opacity: 1;
   bottom: 10px;
 }
-nav ul li.logo{
-  color: white;
-  font-size: 23px;
-  font-weight: 600;
-  user-select: none;
-}
 .expand{
   flex-grow: 1;
 }
@@ -158,13 +126,101 @@ nav ul li a{
   text-decoration: none;
   transition: .4s;
 }
-nav ul li:hover a{
-  color: #bec5c5;
+@media all and (max-width: 900px){
+  nav{
+    padding: 4px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+  }
 }
-nav ul li i{
-  font-size: 23px;
+.fa-laptop {
+  color: #ffffff;
 }
 /* css for navbar */
+
+/* css for footer */
+footer{
+  font-family: didot;
+  background-color:#7f95d1;
+  height:20rem;
+}
+
+.footer-container{
+  text-align: center;
+  display:inline-flex;
+ font-family: 'Donegal One', serif;
+}
+.footer-container h1{
+  font-size: 1.5rem;
+}
+
+.footer-container ul{
+  margin-top: 0.5rem;
+ list-style: none;
+ margin-top: 0;
+ line-height: 1.7rem;
+ color:white;
+}
+
+.footer-container li:hover{
+  color:#836464  ;
+}
+
+.homepage {
+  width:16rem;
+  text-align: center;
+  color:#ebe8e8;
+
+}
+.homepage h1{
+ margin:0 0 4rem 0;
+  font-size: 2.5rem;
+  color:rgb(255, 255, 255);
+
+}
+.contact{
+  margin-right: 10vw;
+  width:20rem;
+}
+
+.social {
+  padding-right: 3rem;
+}
+.icon-wrap{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.instagram, .facebook,.twitter{
+ width:2.1rem;
+ height:2.1rem;
+ border-radius: 2.1rem;
+ background-color: white;
+}
+
+.facebook i{
+  font-size: 2.3rem;
+  transform: translate(-2px,-1px);
+}
+
+.instagram i, .twitter i{
+  font-size: 1.6rem;
+  transform: translate(0,5px);
+}
+
+.icon-wrap i{
+  color:black; 
+}
+.facebook:hover, .instagram:hover , .twitter:hover{
+  background-color:#9eb7e4b7 ;
+}
+
+.facebook i:hover, .instagram i:hover , .twitter i:hover{
+  color:white;
+}
+/* css for footer */
 *{
     font-family: -apple-system, BlinkMacSystemFont, san-serif;
 }
