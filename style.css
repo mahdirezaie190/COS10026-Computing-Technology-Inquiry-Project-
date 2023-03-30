@@ -56,9 +56,6 @@ a:visited {
   text-decoration: none; color: white; 
 }
 
-footer{
-  padding: 80px 400px;
-}
 .fa {
   padding: 15px;
   font-size: 40px;
@@ -141,22 +138,21 @@ nav ul li a{
 
 /* css for footer */
 footer{
-  font-family: didot;
-  background-color:#7f95d1;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color:#1a2d5fd8;
   height:20rem;
+  padding: 100px 250px;
 }
 
 .footer-container{
   text-align: center;
-  display:inline-flex;
- font-family: 'Donegal One', serif;
+ font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .footer-container h1{
-  font-size: 1.5rem;
+  margin: 10px;
 }
 
 .footer-container ul{
-  margin-top: 0.5rem;
  list-style: none;
  margin-top: 0;
  line-height: 1.7rem;
@@ -168,57 +164,48 @@ footer{
 }
 
 .homepage {
-  width:16rem;
-  text-align: center;
-  color:#ebe8e8;
-
+  margin-top: 0.5rem;
+  color: white;
 }
-.homepage h1{
- margin:0 0 4rem 0;
-  font-size: 2.5rem;
-  color:rgb(255, 255, 255);
 
-}
 .contact{
-  margin-right: 10vw;
-  width:20rem;
+  margin-top: 1.5rem;
+  color: white;
+}
+.social{
+  margin-top: 2.5rem;
+  color: white;
 }
 
-.social {
-  padding-right: 3rem;
+footer{
+  padding: 100px 250px;
 }
-.icon-wrap{
-  display: flex;
-  margin-top: 1rem;
-  justify-content: space-between;
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
 }
-
-.instagram, .facebook,.twitter{
- width:2.1rem;
- height:2.1rem;
- border-radius: 2.1rem;
- background-color: white;
+.fa:hover {
+  opacity: 0.7;
 }
-
-.facebook i{
-  font-size: 2.3rem;
-  transform: translate(-2px,-1px);
+.fa-facebook {
+background: #3B5998;
+color: white;
 }
-
-.instagram i, .twitter i{
-  font-size: 1.6rem;
-  transform: translate(0,5px);
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
-
-.icon-wrap i{
-  color:black; 
-}
-.facebook:hover, .instagram:hover , .twitter:hover{
-  background-color:#9eb7e4b7 ;
+.fa-instagram {
+  background: #dd47a4;
+  color: white;
 }
 
-.facebook i:hover, .instagram i:hover , .twitter i:hover{
-  color:white;
+.descriptionhomepage{
+  color: white;
 }
 /* css for footer */
 *{
