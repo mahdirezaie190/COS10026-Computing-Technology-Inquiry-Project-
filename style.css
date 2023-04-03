@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, san-serif;
 }
 .backgroundimage {
   opacity: 1;
@@ -208,9 +209,7 @@ color: white;
   color: white;
 }
 /* css for footer */
-*{
-    font-family: -apple-system, BlinkMacSystemFont, san-serif;
-}
+
 
 /*css for apply.html */
 
