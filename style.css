@@ -210,7 +210,6 @@ color: white;
 }
 /* css for footer */
 
-
 /*css for apply.html */
 
 #applypage{
@@ -218,13 +217,13 @@ color: white;
 }
 
 form{
-    margin:20px;
-    
+    margin:30px;
     
 }
 
 fieldset{
     background-color: white;
+    padding: 25px;
 }
 form ul{
     list-style: none;
@@ -234,7 +233,6 @@ form ul{
 }
 #name li{
     display:inline-block;
-    margin:0;
 }
 form label{
     font-weight:600 ;
@@ -268,13 +266,9 @@ form input{
 
 
 /* css for about.html */
-
-#aboutpage{
-    margin:2em;
-}
 .group{
     border:1px solid black;
-    margin-bottom: 2em;
+    margin: 3em 3em 4em 3em;
 }
 .group h3{
     margin-left: 20px;
@@ -291,7 +285,8 @@ form input{
 
 .profile{
     box-shadow: 5px 5px 10px gray;
-    margin-bottom: 2em;
+    margin: 3em 3em 4em 3em;
+    border-radius: 10px;
 
 }
 
@@ -373,7 +368,3 @@ td{
     background-color: #dbdbdba3;
 }
 
-@media only screen and (min-width: 978px) {
-    
-
-}
