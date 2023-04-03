@@ -211,6 +211,7 @@ color: white;
 *{
     font-family: -apple-system, BlinkMacSystemFont, san-serif;
 }
+
 /*css for apply.html */
 
 #applypage{
@@ -219,7 +220,7 @@ color: white;
 
 form{
     margin:20px;
-   
+    
     
 }
 
@@ -272,17 +273,6 @@ form input{
 #aboutpage{
     margin:2em;
 }
-table{
-    margin: 20px;
-}
-table, th, td{
-    border:1px solid black;
-    padding:8px;
-    height:5px;
-    text-transform: capitalize;
-    border-collapse: collapse;
-}
-
 .group{
     border:1px solid black;
     margin-bottom: 2em;
@@ -292,57 +282,99 @@ table, th, td{
 }
 .group img{
     display: block;
-    margin-top:2em;
+    margin-top:3em;
+    width:40%;
+    height:16%;
     margin-left: auto;
     margin-right: auto;
 }
-.group dt{
-    margin-left: 20px;
-}
 
-dl{
-    font-size: 20px;
-}
-dt{
-    text-align: right;
-    float:left;
-    font-weight: 600;
-    margin-right: 5px;
-    color:rgb(13, 22, 146);
-   
-   
-}
-dd{
-    margin-bottom: 10px;
-    font-weight: 500;
-
-}
-
-dl a {
-    text-decoration: none;
-    
-}
-dl a:hover{
-    color:rgb(91, 86, 86);
-}
 
 .profile{
-    border:2px solid black;
     box-shadow: 5px 5px 10px gray;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
     margin-bottom: 2em;
 
 }
-.col1{
-    width:40%;
+
+.row1 , .row2{
+    padding:20px;
 }
-.col1, .col2{
-   margin:20px;
+.row2{
+    padding-top: 0;
+}
+.row1{
+    column-count: 2;
+   
 }
 
-.col2 img{
-    width:260px;
-    height:300px;
+dl{
+    font-size: 18px;
+    margin: 15px;
+}
+
+dl a {
+text-decoration: none;
+
+}
+
+dl a:hover{
+color:rgb(91, 86, 86);
+}
+
+
+dt{ 
+    float:left;
+    font-weight: 600;
+    color:rgb(13, 22, 146);
+    width:180px;
+    
+}
+
+
+dd{
+    margin-bottom:20px;
+    font-weight: 500;
+    width: 600px;
+
+}
+
+
+.row1 img{
+    float:right;
+    width:210px;
+    height:240px;
+    margin:15px;
+    border:1px solid black;
+}
+
+
+table, th, tr,td{
+border:1px solid black;
+text-transform: uppercase;
+border-collapse: collapse;
+padding:6px;
+text-align: center;
+
+}
+
+table{
+    table-layout: fixed;
+    margin:9px;
+    width:98%;
+ 
+}
+
+th{
+    font-weight: bold;
+    background-color: #6a89dff3;
+}
+
+td{
+    width:20%;
+    background-color: #dbdbdba3;
+}
+
+@media only screen and (min-width: 978px) {
+    
+
 }
