@@ -19,25 +19,23 @@
 }
 .text h4 {
   font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .text h1 {
   font-weight: 700;
   font-size: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  
   margin: 40px 0px;
 }
 .text h3 {
   font-weight: 750;
   font-size: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
 .btn {
   background-color: rgba(255, 255, 255, 0.164);
   color: white;
   border: none;
   font-size: 19px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: bold;
   line-height: 50px;
   width: 200px;
@@ -82,7 +80,7 @@ nav ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ 
 }
 nav ul li.logo{
   font-size: 35px;
@@ -139,7 +137,7 @@ nav ul li a{
 
 /* css for footer */
 footer{
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ 
   background-color:#1a2d5fd8;
   height:20rem;
   padding: 100px 250px;
@@ -147,7 +145,7 @@ footer{
 
 .footer-container{
   text-align: center;
- font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ 
 }
 .footer-container h1{
   margin: 10px;
