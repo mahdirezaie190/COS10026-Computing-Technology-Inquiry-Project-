@@ -1,0 +1,413 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, san-serif;
+  }
+
+.backgroundimage {
+  opacity: 1;
+  background: linear-gradient(rgba(70, 68, 68, 0.55), rgba(0, 0, 0, 0.55)),
+    url("image.webp");
+  width: 100%;
+  height: 100vh;
+}
+
+.text {
+  width: 100;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+}
+.text h4 {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.text h1 {
+  font-weight: 700;
+  font-size: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 40px 0px;
+}
+.text h3 {
+  font-weight: 750;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0.164);
+  color: white;
+  border: none;
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  line-height: 50px;
+  width: 200px;
+  margin-top: 25px;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+  opacity: 0.5;
+}
+a:link { 
+  text-decoration: none;
+}
+a:visited { 
+  text-decoration: none; color: white; 
+}
+
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* css for index.html */
+
+/* css for navbar */
+nav{
+  background-color: rgba(0, 0, 0, 0.541);
+  padding: 10px 65px;
+}
+nav ul{
+  font-size: 40px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+nav ul li.logo{
+  font-size: 35px;
+  padding: 18px 0;
+}
+nav ul li{
+  padding: 25px 0;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 18px;
+  text-align: center;
+  order: 3;
+  font-size: 20px;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 9px;
+  height: 2px;
+  width: 100%;
+  background: #bec5c5;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 10px;
+}
+.expand{
+  flex-grow: 1;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  transition: .4s;
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 4px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+  }
+}
+.fa-laptop {
+  color: #ffffff;
+}
+/* css for navbar */
+  
+/* css for footer */
+footer{
+    background-color:#1a2d5fd8;
+    height:20rem;
+    padding: 100px 250px;
+}
+
+.footer-container{
+    text-align: center;
+}
+.footer-container h1{
+    margin: 10px;
+}
+
+.footer-container ul{
+    list-style: none;
+    margin-top: 0;
+    line-height: 1.7rem;
+    color:white;
+}
+
+.footer-container li:hover{
+    color:#836464  ;
+}
+
+.homepage {
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.contact{
+    margin-top: 1.5rem;
+    color: white;
+    }
+.social{
+    margin-top: 2.5rem;
+    color: white;
+}
+
+footer{
+    padding: 100px 250px;
+}
+.fa {
+    padding: 15px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #dd47a4;
+    color: white;
+}
+
+.descriptionhomepage{
+    color: white;
+}
+/* css for footer */
+  
+
+/*css for apply.html */
+
+form{
+    margin:2.5em 3em 1.5em 3em;
+}
+
+fieldset{
+    background-color: white;
+    padding: 25px;
+}
+form ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+#name li{
+    display:inline-block;
+    margin-right: 20px;
+}
+form label{
+    font-weight:600 ;
+}
+form input{
+    margin-bottom:1em;
+}
+#gendertext{
+    font-weight:normal;
+}
+
+#submit{
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 0px rgba(140, 132, 136, 0.65);
+    
+}
+
+#submit:hover{
+    background-color: lightblue;
+}
+#checklist{
+    margin-top: 5px;
+}
+#checklist label{
+    font-weight:normal;
+}
+
+
+
+
+/* css for about.html */
+#header{
+  margin-top: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.group{
+    padding:5px;
+    border: 10px double black;
+    margin:3.5vw;
+    background-image:url(group.jpeg);
+    background-position: center;
+    background-size: cover;
+    height:500px;
+    background-repeat: no-repeat;
+    
+}
+
+.profile{
+    box-shadow: 5px 5px 10px gray;
+    margin:3.5vw;
+    border-radius: 10px;
+
+}
+
+.row1 , .row2{
+    padding:20px;
+}
+.row2{
+    padding-top: 0;
+}
+.row1{
+    column-count: 2;
+   
+}
+
+dl{
+    font-size: 18px;
+    margin: 15px;
+}
+
+dl a {
+    text-decoration: none;
+    color:blue;
+
+}
+
+dl a:hover{
+color:rgb(96,96, 96);
+}
+
+
+dt{ 
+    float:left;
+    font-weight: 600;
+    color:rgb(13, 22, 146);
+    width:180px;
+    margin-bottom:5px;
+    
+}
+
+
+dd{
+    margin-bottom:18px;
+    font-weight: 500;
+    width: 600px;
+
+}
+
+
+.row1 img{
+    float:right;
+    width:220px;
+    height:250px;
+    margin:15px;
+    border:2px solid rgb(141, 140, 140);
+    border-radius:20px;
+}
+
+
+table, th, tr,td{
+border:1px solid black;
+text-transform: uppercase;
+border-collapse: collapse;
+padding:6px;
+text-align: center;
+
+}
+
+table{
+    table-layout: fixed;
+    margin:9px;
+    width:98%;
+ 
+}
+
+th{
+    font-weight: bold;
+    background-color: #6a89dff3;
+}
+
+td{
+    width:20%;
+    background-color: #dbdbdba3;
+}
+
+@media (max-width:938px){
+    .row1{
+       display:flex;
+       flex-direction: column-reverse;
+    }
+
+    dd{
+        margin-bottom: 10px;
+    }
+    .row1 img{
+        width:260px;
+        height:270px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    dl{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    dt{
+        width:20vw;
+
+    }
+    dd{
+        width: 50vw;
+    }
+
+    table{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:480px){
+    .group, .profile{
+        margin:1vw;
+    }
+    table{
+        font-size:8px;
+    }
+}
+   
