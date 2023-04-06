@@ -215,6 +215,7 @@ footer{
 
 form{
     margin:2.5em 3em 1.5em 3em;
+    width:65%;
 }
 
 fieldset{
@@ -245,12 +246,13 @@ form input{
     margin-top: 10px;
     padding:10px;
     border-radius: 10px;
+    background-color: white;
     box-shadow:0px 2px 2px 0px rgba(140, 132, 136, 0.65);
     
 }
 
 #submit:hover{
-    background-color: lightblue;
+    background-color: rgba(175, 168, 168, 0.656);
 }
 #checklist{
     margin-top: 5px;
@@ -264,20 +266,29 @@ form input{
 
 /* css for about.html */
 #header{
-  margin-top: 3vw;
   text-align: center;
   text-transform: uppercase;
+  color:white;
+  margin-bottom: 5px;
+  border-radius: 10px 10px 0 0;
 }
 .group{
-    padding:5px;
-    border: 10px double black;
-    margin:3.5vw;
-    background-image:url(group.jpeg);
-    background-position: center;
-    background-size: cover;
-    height:500px;
-    background-repeat: no-repeat;
+    padding:1vw;
+    margin:3vw 2vw 4vw 2vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: rgb(200, 198, 198);
     
+}
+
+.group img{
+  height:25%;
+  width:100%;
+
+}
+
+.group dl{
+  padding-left:1%;
 }
 
 .profile{
@@ -288,7 +299,7 @@ form input{
 }
 
 .row1 , .row2{
-    padding:20px;
+    padding:2%;
 }
 .row2{
     padding-top: 0;
@@ -334,8 +345,8 @@ dd{
 
 .row1 img{
     float:right;
-    width:220px;
-    height:250px;
+    width:45%;
+    height:80%;
     margin:15px;
     border:2px solid rgb(141, 140, 140);
     border-radius:20px;
@@ -369,45 +380,55 @@ td{
 }
 
 @media (max-width:938px){
-    .row1{
-       display:flex;
-       flex-direction: column-reverse;
-    }
+  #header{
+    font-size:18px;
+  }
+  .row1{
+      display:flex;
+      flex-direction: column-reverse;
+  }
 
-    dd{
-        margin-bottom: 10px;
-    }
-    .row1 img{
-        width:260px;
-        height:270px;
-        margin-left: auto;
-        margin-right:auto;
-    }
+  dd{
+      margin-bottom: 10px;
+  }
+  .row1 img{
+      width:140px;
+      height:160px;
+      margin-left: auto;
+      margin-right:auto;
+  }
 
-    dl{
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-    dt{
-        width:20vw;
+  dl{
+      font-size: 14px;
+      margin-bottom: 0;
+  }
+  dt{
+      width:20vw;
 
-    }
-    dd{
-        width: 50vw;
-    }
-
-    table{
-        font-size: 10px;
-    }
+  }
+  dd{
+      width: 50vw;
+      margin-bottom: 5px;
+  }
+  table{
+    font-size:10px;
+  }
 
 }
 
 @media (max-width:480px){
-    .group, .profile{
-        margin:1vw;
-    }
-    table{
-        font-size:8px;
-    }
+  .group dl {
+    margin-top: 1vw;
+  }
+
+  dl{
+    font-size:10px;
+  }
+  dt{
+    width:30vw;
+  }
+   dd{
+    width:80vw;
+   }
 }
    
