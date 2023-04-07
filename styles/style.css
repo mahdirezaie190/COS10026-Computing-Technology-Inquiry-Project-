@@ -1,51 +1,39 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, san-serif;
-  }
-
-.backgroundimage {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, san-serif;
+}
+.backgroundcolor{
   opacity: 1;
-  background: linear-gradient(rgba(70, 68, 68, 0.55), rgba(0, 0, 0, 0.55)),
-    url("image.webp");
+  background-image: linear-gradient( 102.4deg,  rgb(243, 169, 49) 7.8%, rgb(234, 16, 245) 100.3% );
   width: 100%;
   height: 100vh;
 }
-
 .text {
   width: 100;
   margin-top: 250px;
   text-align: center;
   color: white;
 }
-.text h4 {
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
 .text h1 {
-  font-weight: 700;
   font-size: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
 .text h3 {
-  font-weight: 750;
+  font-weight: 400;
   font-size: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .btn {
-  background-color: rgba(255, 255, 255, 0.164);
-  color: white;
+  background-color: rgb(195, 80, 218);
   border: none;
-  font-size: 19px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: bold;
-  line-height: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 45px;
   width: 200px;
   margin-top: 25px;
-  border: 3px solid white;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 15px;
+  margin: 30px 0px;
 }
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.212);
@@ -55,27 +43,15 @@ a:link {
   text-decoration: none;
 }
 a:visited { 
-  text-decoration: none; color: white; 
-}
-
-.fa {
-  padding: 15px;
-  font-size: 40px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-}
-.fa:hover {
-  opacity: 0.7;
+  text-decoration: none; color: #fff8f8; 
 }
 
 /* css for index.html */
 
 /* css for navbar */
 nav{
-  background-color: rgba(0, 0, 0, 0.541);
-  padding: 10px 65px;
+  background-color: rgba(0, 0, 0, 0.336);
+  padding: 10px 80px;
 }
 nav ul{
   font-size: 40px;
@@ -83,25 +59,19 @@ nav ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-nav ul li.logo{
-  font-size: 35px;
-  padding: 18px 0;
+.pagename{
+  font-size: 25px;
 }
+
 nav ul li{
   padding: 25px 0;
-  align-items: center;
-  justify-content: center;
-}
-nav ul li.items{
   position: relative;
-  width: auto;
   margin: 0 18px;
   text-align: center;
-  order: 3;
   font-size: 20px;
 }
+
 nav ul li.items:after{
   position: absolute;
   content: "";
@@ -121,7 +91,7 @@ nav ul li.items:hover:after{
   flex-grow: 1;
 }
 nav ul li a{
-  color: white;
+  color: #fff8f8;
   text-decoration: none;
   transition: .4s;
 }
@@ -134,79 +104,67 @@ nav ul li a{
   }
 }
 .fa-laptop {
-  color: #ffffff;
+  color: #fff8f8;
 }
 /* css for navbar */
-  
+
 /* css for footer */
-footer{
-    background-color:#1a2d5fd8;
-    height:20rem;
-    padding: 100px 250px;
-}
 
-.footer-container{
-    text-align: center;
+.footer{
+    padding: 100px;
+    background: #333;
+    color: #fff8f8;
+    display: flex;
+    font-weight: 200;
 }
-.footer-container h1{
-    margin: 10px;
-}
-
-.footer-container ul{
+.footer ul{
     list-style: none;
-    margin-top: 0;
     line-height: 1.7rem;
-    color:white;
+    text-align: center; 
+    color:#fff8f8;
 }
-
-.footer-container li:hover{
-    color:#836464  ;
-}
-
-.homepage {
-    margin-top: 0.5rem;
-    color: white;
-}
-
-.contact{
-    margin-top: 1.5rem;
-    color: white;
-    }
-.social{
-    margin-top: 2.5rem;
-    color: white;
-}
-
-footer{
-    padding: 100px 250px;
-}
-.fa {
-    padding: 15px;
-    font-size: 40px;
-    width: 50px;
+.footer div h3{
+    font-weight: 300;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 10px;
+    margin-bottom: 30px;
+}
+.footer p{
+    text-align: center; 
+    line-height: 1.7rem;
+}
+.col-1{
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
 }
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-
 .fa-facebook {
-    background: #3B5998;
-    color: white;
+background: #3B5998;
+color: white;
 }
 .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  background: #55ACEE;
+  color: white;
 }
 .fa-instagram {
-    background: #dd47a4;
-    color: white;
+  background: #dd47a4;
+  color: white;
 }
 
 .descriptionhomepage{
-    color: white;
+  color: white;
 }
 /* css for footer */
   
