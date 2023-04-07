@@ -6,135 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apply</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 <body>
-      <nav>
+
+    <nav>
         <ul>
-            <i class="fa-solid fa-computer"></i>
+            <i class="fa fa-laptop"></i>
             <li class="logo"><a href="index.html">CodeCrafters</a></li>
             <li class="expand"></li>
             <li class="items"><a href="index.html">Home</a></li>
             <li class="items"><a href="jobs.html">Jobs</a></li>
-            <li class="items"><a href="apply.html">Job Applications</a></li>
+            <li class="items"><a href="apply.html">Apply</a></li>
             <li class="items"><a href="about.html">About Us</a></li>
         </ul>
     </nav>
+ 
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Job Application Form</legend>
+            <label for="refnum">Job Reference Number</label><br>
+            <input type="text" name="refnum" id="refnum" required="required" minlength="5" maxlength="5" ><br>
+    
+            <label for="title">Title</label><br>
+            <select name="title" id="title">
+                <option value="Mr">Mr</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+            </select>
 
-<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-    <fieldset>
-        <legend>Job Application Form</legend>
-        <label for="refnum">Job Reference Number</label><br>
-        <input type="text" name="refnum" id="refnum" required="required" minlength="5" maxlength="5" ><br>
-  
-        <label for="title">Title</label><br>
-        <select name="title" id="title">
-            <option value="Mr">Mr</option>
-            <option value="Miss">Miss</option>
-            <option value="Ms">Ms</option>
-            <option value="Mrs">Mrs</option>
-        </select>
+                <ul id="name">
+                    <br>
+                    <li>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="fname" id="fname" required="required" maxlength="20">
+                    </li>
 
-            <ul id="name">
+                    <li>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" required="required" maxlength="20">
+                    </li>
+                </ul>
+
+    
+            <label for="birthdate">Date of Birth</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br>
+            
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" checked="checked" value="male">
+            <label for="male" class="gendertext" >Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female" class="gendertext">Female</label>
+            <input type="radio" name="gender" id="other" value="other" >
+            <label for="other" class="gendertext">Other</label><br>
+
+        <!--address section -->
+
+        <label for="street">Street</label><br>
+            <input type="text" id="street" required="required" maxlength="40"><br>
+            <label for="suburb">Suburb</label><br>
+            <input type="text" id="suburb" required="required" maxlength="40"><br>
+    
+            <label for="state">State</label><br>
+            <select name="state" id="state">
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
+            <br>
+            <br>
+            <label for="postcode">Postcode</label><br>
+            <input type="text" id="postcode" required="required" minlength="4" maxlength="4" ><br>
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" required="required"><br>
+
+            <label>Contact Number</label><br>
+            <input type="tel" id="number" minlength="8" maxlength="12">
+            <br>
+            <label for="skills">Select the skill(s) that you possess for this position:</label><br>
+            <ul id="checklist">
+
                 <li>
-                    <label for="fname">First Name</label><br>
-                    <input type="text" name="fname" id="fname" required="required" maxlength="20">
+                    <input type="checkbox" name="skill[]" value="A degree in Computer Science or equivalent" >
+                    <label for="skill[]">A degree in Computer Science or equivalent</label><br>
+
+                </li>
+                <li>
+                    <input type="checkbox" name="skill[]" value="A strong understanding of web markup languages (HTML5/CSS3)">
+                    <label for="skill[]">A strong understanding of web markup languages (HTML5/CSS3)</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="skill[]" value="Experience with Vue and React frameworks" >
+                    <label for="skill[]">Experience with Vue and React frameworks</label><br>
                 </li>
 
                 <li>
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" name="lname" id="lname" required="required" maxlength="20">
+                    <input type="checkbox" name="skill[]" value="Familiarity with cross-browser testing" >
+                    <label for="skill[]">Familiarity with cross-browser testing</label><br>
                 </li>
+
+                <li>
+                    <input type="checkbox" name="skill[]" value="Experience with company network management">
+                    <label for="skill[]">Experience with company network management</label><br>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="skill[]" value="Familiarity with cloud computing architecture">
+                    <label for="skill[]">Familiarity with cloud computing architecture</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" name="skill[]" value="Proficient network and debugging skills">
+                    <label for="skill[]">Proficient network and debugging skills</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" name="skill[]" value="Other skills">
+                    <label for="other_skills" >Other skills: </label><br>
+                </li>
+                <textarea name="other_skills"></textarea>
             </ul>
 
+        </fieldset>
+
+    
+    <input type= "submit" value="SUBMIT" id="submit"/>
+        
+        
+
+    </form>
+
+    <footer>
+        <div class="footer">
+            <div class="col-1">
+                <h3>CODE CRAFTERS</h3>
+                <p>Find your ideal job at Code Crafters in network engineering and web development in Australia</p>
+            </div>
+            <div class="col-2">
+                <h3>CONTACTS</h3>
+                <ul>
+                    <li><a href=#></a>Hawthorn, Victoria 3122 </li>
+                    <li><a href=#></a>Phone: 0491764882</li>
+                    <li><a href=#></a>Email: CodeCrafters@gmail.com</li>
+                    <li><a href=#></a>Skype: CodeCrafters_online</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>FOLLOW US</h3>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
   
-        <label for="birthdate">Date of Birth</label><br>
-        <input type="date" id="birthdate" name="birthdate"><br>
-    
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" checked="checked">
-        <label for="male" id="gendertext">Male</label>
-        <input type="radio" name="gender" id="female" >
-        <label for="female" id="gendertext">Female</label>
-        <input type="radio" name="gender" id="other" >
-        <label for="other"  id="gendertext">Other</label><br>
-
-       <!--address section -->
-
-       <label for="street">Street</label><br>
-        <input type="text" id="street" required="required" maxlength="40"><br>
-        <label for="suburb">Suburb</label><br>
-        <input type="text" id="suburb" required="required" maxlength="40"><br>
- 
-        <label for="state">State</label><br>
-        <select name="state" id="state">
-            <option value="VIC">VIC</option>
-            <option value="NSW">NSW</option>
-            <option value="QLD">QLD</option>
-            <option value="NT">NT</option>
-            <option value="WA">WA</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="ACT">ACT</option>
-        </select>
-        <br>
-        <br>
-        <label for="postcode">Postcode</label><br>
-        <input type="text" id="postcode" required="required" minlength="4" maxlength="4" ><br>
-
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" required="required"><br>
-
-        <label>Contact Number</label><br>
-        <input type="tel" id="number" minlength="8" maxlength="12">
-        <br>
-        <label for="skills">Select the skill(s) that you possess for this position:</label><br>
-        <ul id="checklist">
-        <li>
-            <input type="checkbox" name="skill[]" >
-            <label for="skill[]">Good understanding of web markup languages (HTML5/CSS)</label>
-        </li>
-        <li>
-            <input type="checkbox" name="skill[]" >
-            <label for="skills">Experience with Vue and React frameworks</label><br>
-        </li>
-
-        <li>
-            <input type="checkbox" name="skill[]" >
-            <label for="skills">Familiarity with cross-browser testing</label><br>
-        </li>
-
-        <li>
-            <input type="checkbox" name="skill[]" >
-            <label for="skills">Experience with company network management</label><br>
-        </li>
-
-        <li>
-             <input type="checkbox" name="skill[]" >
-             <label for="skills">Proficient network and debugging skills</label><br>
-
-        </li>
-
-        <li>
-            <label>Other skills: </label><br>
-            <textarea name="other skills">
-
-            </textarea>
-        </li>
-        </ul>
-    </fieldset>
-   
-   <input type= "submit" value="SUBMIT" id="submit"/>
-    
-    
-
-</form>
-
-
-    
 </body>
-<footer>
-
-</footer>
 </html>
