@@ -23,12 +23,6 @@
 		background-position: 0% 50%;
 	}
 }
-.logo{
-    width: 230px;
-    height: 50px;
-    margin: 10px 0px;
-    cursor: pointer;
-}
 .text {
   width: 100;
   margin-top: 250px;
@@ -83,6 +77,12 @@ nav ul{
 .pagename{
   font-size: 25px;
 }
+.logo{
+    width: 230px;
+    height: 50px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
 
 nav ul li{
   padding: 25px 0;
@@ -122,9 +122,6 @@ nav ul li a{
   nav ul li.items{
     width: 100%;
   }
-}
-.fa-laptop {
-  color: #fff8f8;
 }
 /* css for navbar */
 
