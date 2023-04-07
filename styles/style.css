@@ -3,11 +3,31 @@
   padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, san-serif;
 }
-.backgroundcolor{
-  opacity: 1;
-  background-image: linear-gradient( 102.4deg,  rgb(243, 169, 49) 7.8%, rgb(234, 16, 245) 100.3% );
-  width: 100%;
-  height: 100vh;
+
+.backgroundcolor {
+	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #3da089);
+	background-size: 600% 600%;
+	animation: gradient 20s ease infinite;
+	width: 100%;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.logo{
+    width: 230px;
+    height: 50px;
+    margin: 10px 0px;
+    cursor: pointer;
 }
 .text {
   width: 100;
@@ -24,7 +44,7 @@
   font-size: 25px;
 }
 .btn {
-  background-color: rgb(195, 80, 218);
+  background-color: rgba(255, 255, 255, 0.212);
   border: none;
   font-size: 15px;
   font-weight: 700;
