@@ -215,11 +215,13 @@ footer {
     color: white;
   }
   /* css for footer */
+
+
 /*css for apply.html */
 
 form{
     margin:3vw 4vw 2vw 4vw;
-    color:#474747;
+    color:#383737;
 }
 
 fieldset{
@@ -298,11 +300,7 @@ textarea{
     padding:1vw;
     margin:3vw 2vw 4vw 2vw;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px gray;
-    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #3da089);
-    background-size: 600% 600%;
-    animation: gradient 20s ease infinite;
-    
+    background-color:rgba(32, 77, 173, 0.438) ;
 }
 
 .group img{
@@ -459,74 +457,27 @@ td{
 /* enhancements page */
 /* enhancements page */
 
-.ebody {
-  background-color: #fff;
-  margin: 0 auto;
+#enhance-h1{
+  text-align: center;
+  margin-top:15px;
+  font-weight: 600;
 }
 
-.htwo {
-  color: #333;
-  font-family: "Varela Round", sans-serif;
-  font-size: 26px;
-  font-weight: 100;
-  margin: 0 auto 20px auto;
+.e-container{
+  background-color: rgba(32, 77, 173, 0.438);
+  box-shadow: 5px 5px 10px gray;
+  border-radius:10px;
+  margin:20px 5vw 40px 5vw;
+  padding:10px;
 }
 
-.hthree {
-  color: #466995;
-  font-family: "Oswald", sans-serif;
+.e-container h2{
+  text-align: center;
+  font-weight: 500;
+}
+.detail{
+  margin:5px;
+  padding:20px;
   font-size: 18px;
-  text-align: center;
-  font-weight: 7;
-
-  padding: 30px;
-}
-
-.hfour {
-  color: #466995;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.paragraph {
-  color: #333;
-  font-family: "Varela Round", sans-serif;
-  font-size: 18px;
-}
-
-.welcome {
-  background-color: #dbe9ee;
-  box-sizing: border-box;
-  padding: 40px;
-  text-align: center;
-  width: 100%;
-  top: 50px;
-}
-
-.question {
-  text-align: center;
-  border: 15px solid #dbe9ee;
   background-color: white;
-  text-align: center;
-  top: 40px;
-  clear: left;
 }
-
-.answer {
-  border: 1px solid #466995;
-  margin: 20px;
-  display: inline-block;
-}
-
-.answer:hover {
-  background: #c0d6df;
-  color: #fff;
-}
-
-/* enhancements page */
-/* enhancements page */
-   
