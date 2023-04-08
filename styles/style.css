@@ -64,8 +64,14 @@ a:visited {
 
 /* css for navbar */
 nav{
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(32, 77, 173, 0.438);
   padding: 10px 80px;
+}
+.logo{
+    width: 230px;
+    height: 50px;
+    margin: 10px 0px;
+    cursor: pointer;
 }
 nav ul{
   font-size: 40px;
@@ -76,12 +82,6 @@ nav ul{
 }
 .pagename{
   font-size: 25px;
-}
-.logo{
-    width: 230px;
-    height: 50px;
-    margin: 10px 0px;
-    cursor: pointer;
 }
 
 nav ul li{
@@ -123,6 +123,7 @@ nav ul li a{
     width: 100%;
   }
 }
+
 /* css for navbar */
 
 /* css for footer */
@@ -184,7 +185,7 @@ color: white;
   color: white;
 }
 /* css for footer */
-  
+
 
 /*css for apply.html */
 
@@ -256,7 +257,7 @@ textarea{
 #submit:hover{
   background-color: rgba(175, 168, 168, 0.656);
 }
-
+/* css for apply.html*/
 
 /* css for about.html */
 #header{
@@ -425,4 +426,38 @@ td{
     width:80vw;
    }
 }
-   
+/* css for about.html */
+
+
+/* enhancements page */
+
+  .welcome {
+    background-color: #dbe9ee;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    top: 50px;
+  }
+
+  .question {
+    text-align: center;
+    border: 15px solid #dbe9ee;
+    background-color: white;
+    text-align: center;
+    top: 40px;
+    clear: left;
+  }
+
+  .answer {
+    border: 1px solid #466995;
+    margin: 20px;
+    display: inline-block;
+  }
+
+  .answer:hover {
+    background: #c0d6df;
+    color: #fff;
+  }
+
+/* enhancements page */
