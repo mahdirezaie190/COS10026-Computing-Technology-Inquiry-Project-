@@ -5,97 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enhancement</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- font Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- font Link -->
   </head>
-
+  <body >
   <!--navbar  -->
   <nav>
     <ul>
-      <a href="index.html"><img class="logo" src="logo.png" /></a>
+      <a href="index.html"><img class="logo" src="images/logo.png" /></a>
       <li class="expand"></li>
       <li class="items"><a href="index.html">Home</a></li>
       <li class="items"><a href="jobs.html">Jobs</a></li>
       <li class="items"><a href="apply.html">Apply</a></li>
       <li class="items"><a href="about.html">About Us</a></li>
       <li class="items"><a href="enhancements.html">Enhancements</a></li>
+      <li class="items"><a href="video.html">Video</a></li>
     </ul>
   </nav>
   <!-- navbar -->
-  <body class="ebody">
-    <div class="welcome">
-      <p class="paragraph">Welcome to Enhancement page!</p>
-    </div>
+    <h1 id="enhance-h1">Implemented Enhancements</h1>
 
-    <div class="question">
-      <h4 class="hfour"></h4>
-      <h2 class="htwo">Responsiveness</h2>
-
-      <div class="answer">
-        <h3 class="hthree">
-          We implemented flexbox Responsiveness to our navigation menu and our
-          pages.
-        </h3>
+    <div class="e-container">
+      <h2>Responsiveness</h2>
+      <div class="detail">
+        <p>Using media queries, the layout of each page will adjust accordingingly depending on the screen size.</p>
       </div>
     </div>
 
-    <div class="question">
-      <h4 class="hfour"></h4>
-      <h2 class="htwo">Website Animation.</h2>
-
-      <div class="answer">
-        <h3 class="hthree">
-          Second Enhancement is web animation, we implemented some basic CSS
-          Animation.
-        </h3>
+    <div class="e-container">
+      <h2>CSS Animation</h2>
+      <div class="detail">
+        <p>Using CSS keyframes, we animated our navigation bar to shift between several colors, which gives the website a livelier design.</p>
       </div>
+
     </div>
 
-    <div class="question">
-      <h4 class="hfour"></h4>
-      <h2 class="htwo">Fonts</h2>
 
-      <div class="answer">
-        <h3 class="hthree">
-          We made improvement in our overall text fonts, using google font and
-          fonts Awesome to make our website more friendly user interface.
-        </h3>
-      </div>
-    </div>
 
     <!--footer  -->
 
     <footer>
-      <div class="footer">
-        <div class="col-1">
+      <div class="footer-column" id="f-col1">
           <h3>CODE CRAFTERS</h3>
-          <p>
-            Find your ideal job at Code Crafters in network engineering and web
-            development in Australia
-          </p>
-        </div>
-        <div class="col-2">
+          <p> 
+              Our goal of Code Crafters is to provide innovative software solutions to our clients that are user-friendly, 
+              secure, and scalable. We strive to maintain a high level of customer 
+              satisfaction by providing excellent customer service and support.</p>
+      </div>
+      <div class="footer-column" id="f-col2">
           <h3>CONTACTS</h3>
           <ul>
-            <li><a href="#"></a>Hawthorn, Victoria 3122</li>
-            <li><a href="#"></a>Phone: 0491764882</li>
-            <li><a href="#"></a>Email: CodeCrafters@gmail.com</li>
-            <li><a href="#"></a>Skype: CodeCrafters_online</li>
+              <li><a href=#></a>Hawthorn, Victoria 3122 </li>
+              <li><a href=#></a>Phone: 0491764882</li>
+              <li><a href=#></a>Email: CodeCrafters@gmail.com</li>
+              <li><a href="mailto:104584773@student.swin.edu.au">
+                  104584773@student.swin.edu.au
+              </a></li>
           </ul>
-        </div>
-        <div class="col-3">
+      </div>
+      <div class="footer-column" id="f-col3">
           <h3>FOLLOW US</h3>
           <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
           <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
           <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-        </div>
       </div>
-    </footer>
+  </footer>
     <!--footer  -->
   </body>
 </html>
