@@ -185,7 +185,6 @@ a[href="mailto:104584773@student.swin.edu.au"]:hover{
 }
 .fa {
   padding: 1vw;
-  font-size: 40px;
   width: 15px;
   border-radius:100px;
   text-align: center;
@@ -429,6 +428,7 @@ background-color: white;
 
 
 /*media queries*/
+
 @media all and (max-width: 900px) {
   .text h1{
     font-size: 70px;
@@ -454,6 +454,9 @@ background-color: white;
   }
   .footer-column p, ul{
     font-size: 10px;
+  }
+  .fa{
+   width:10px;
   }
 }
 
@@ -538,9 +541,10 @@ background-color: white;
       width:100px;
       font-size: 7px;
     }
+    .fa{
+      padding:5px;
+      width:12px;
+    }
   }
   
-  
-
-/*media queries*/
 
