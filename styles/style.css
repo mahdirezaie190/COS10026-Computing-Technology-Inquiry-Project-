@@ -24,7 +24,7 @@
     }
 }
 .text {
-    background-image: url(image.webp);
+    background-image: url(../styles/images/image.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px;
@@ -34,7 +34,7 @@
 }
 .text h1 {
     font-size: 90px;
-    margin: 64px 0px;
+    margin: 64px 0px 0px;
 }
 .text h3 {
     font-weight: 400;
