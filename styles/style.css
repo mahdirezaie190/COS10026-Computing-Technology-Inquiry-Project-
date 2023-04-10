@@ -173,13 +173,13 @@ footer h3 {
   line-height:1.3rem;
 }
 
-a[href="mailto:104584773@student.swin.edu.au"]{
-  color:lightblue;
-  text-decoration: underline;
+.footer-column a{
+color:lightblue;
+text-decoration: underline;
 }
 
-a[href="mailto:104584773@student.swin.edu.au"]:hover{
-  color:gray;
+.footer-column a:hover{
+color:gray;
 }
 #f-col3 ul li{
   display:inline-block;
