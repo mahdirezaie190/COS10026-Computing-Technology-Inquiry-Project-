@@ -71,58 +71,68 @@ a:visited {
 
 /* css for navbar */
 nav {
-  background-color: rgba(32, 77, 173, 0.438);
-  display: flex;
+    background-color: rgba(32, 77, 173, 0.438);
+    display: flex;
 }
 
 .logo {
-  width: 230px;
-  height: 50px;
-  margin: 10px 20px;
-  cursor: pointer;
+    width: 230px;
+    height: 50px;
+    margin: 10px 20px;
+    cursor: pointer;
 }
 nav ul {
-  font-weight: 600;
-  list-style: none;
-  display: flex;
-  flex: 2;
-  flex-wrap: wrap;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
 }
 .pagename {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 nav ul li {
-  padding: 25px 0;
-  position: relative;
-  margin: 0 18px;
-  text-align: center;
-  font-size: 22px;
+    padding: 25px 0;
+    position: relative;
+    margin: 0 18px;
+    text-align: center;
+    font-size: 22px;
 }
 
 nav ul li.items:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 9px;
-  height: 2px;
-  width: 100%;
-  background: #bec5c5;
-  opacity: 0;
-  transition: all 0.2s linear;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 9px;
+    height: 2px;
+    width: 100%;
+    background: #bec5c5;
+    opacity: 0;
+    transition: all 0.2s linear;
 }
 nav ul li.items:hover:after {
-  opacity: 1;
-  bottom: 10px;
+    opacity: 1;
+    bottom: 10px;
 }
 .expand {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 nav ul li a {
-  color: #fff8f8;
-  text-decoration: none;
-  transition: 0.4s;
+    color: #fff8f8;
+    text-decoration: none;
+    transition: 0.4s;
 }
+@media all and (max-width: 1000px) {
+    nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    nav ul li.items {
+    width: 100%;
+    }
+}
+
 
 /* css for footer */
 
