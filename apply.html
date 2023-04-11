@@ -51,7 +51,7 @@
 
     
             <label for="birthdate">Date of Birth</label><br>
-            <input type="date" id="birthdate" name="birthdate"><br>
+            <input type="date" id="birthdate" name="birthdate" required="required"><br>
             
             <label>Gender:</label><br>
             <input type="radio" id="male" name="gender" checked="checked" value="male">
@@ -82,7 +82,7 @@
             <br>
             <br>
             <label for="postcode">Postcode</label><br>
-            <input type="text" id="postcode" required="required" minlength="4" maxlength="4" ><br>
+            <input type="text" id="postcode" required="required"  pattern="[0-9]{4}"><br>
 
             <label for="email">Email Address</label><br>
             <input type="email" id="email" required="required"><br>
