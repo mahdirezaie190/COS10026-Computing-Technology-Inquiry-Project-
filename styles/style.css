@@ -568,51 +568,154 @@ footer h3{
     
   }
   
-      /* css for jobs.html */
-.Job-Title{
+/* css for jobs.html */
+.JobTitle{
   font-variant: small-caps;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
   font-size: medium;
-  margin-left: 10px;
-  padding: 8px 10px 10px 5px
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  clear: left;
 }
 
 .Jobheader2{
   font-variant: small-caps;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
+  padding-left: 27px;
 }
 
 .JobMisc{
-  margin-left: 20px;
+  margin-left: 23px;
+  font-family:'Arial Narrow', 'Arial', sans-serif;
+  font-size: 100%;
   font-style: italic;
 }
 
 .paragraphbody{ 
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 90%;
-  margin-left: 18px;
+  font-family: 'Arial Narrow', 'Arial', sans-serif;
+  font-size: 95%;
+  margin-left: 23px;
+  margin-right: 150px;
   padding-top: 8px;
+  padding-bottom: 25px;
 }
 
 .asidetext{
   border: 4px inset lightsteelblue;
   border-radius: 14px;
-  padding-left: 5px;
+  padding-left: 8px;
   width: 25%;
   float: right;
   box-shadow: 7px 7px 3px lightsteelblue; 
+  font-family: 'Arial Narrow', 'Arial', sans-serif;
+  font-size: 100%;
 }
 
-.JobsLists{
-  margin-left: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 85%;
-  padding-left: 20px;
+.JobsList1{
+  margin-left: 25px;
+  padding-left: 23px;
   padding-bottom: 5px;
+  float: left;
 }
 
-.Jobapply{
+.JobsList2{
+  margin-left: 25px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.JobsList3{
+  margin-left: 25px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.JobsList4{
+  margin-left: 25px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.JobsList5{
+  margin-left: 25px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.JobsList6{
+  margin-left: 25px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.JobsLists ol, ul, li{
+  font-family: 'Arial Narrow', 'Arial', sans-serif;
+  font-size: 100%;
+}
+
+.Joblinebreak{
+  clear: both;
+}
+
+.button1{
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
   padding-left: 15px;
+  padding-bottom: 6px;
+  padding-right: 15px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 35px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
+.button p{
+  color: black;
+  font-style: oblique;
+  font-family: 'Monaco', 'Lucidia Console', 'monospace';
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 500ms;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 500ms;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
