@@ -366,7 +366,7 @@ border: 2px solid rgb(141, 140, 140);
 border-radius: 20px;
 }
 
-table,
+.row2 table,
 th,
 tr,
 td {
@@ -377,18 +377,18 @@ padding: 6px;
 text-align: center;
 }
 
-table {
+.row2 table {
 table-layout: fixed;
 margin: 9px;
 width: 98%;
 }
 
-th {
+.row2 th {
 font-weight: bold;
 background-color: #6a89dff3;
 }
 
-td {
+.row2 td {
 width: 20%;
 background-color: #dbdbdba3;
 }
