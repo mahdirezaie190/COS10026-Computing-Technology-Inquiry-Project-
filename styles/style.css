@@ -218,223 +218,11 @@ color: white;
 /* css for footer */
 
 
-/*css for apply.html */
-
-form {
-margin: 3vw 4vw 2vw 4vw;
-color: #474747;
-}
-
-fieldset {
-background-color: white;
-padding: 25px;
-border: 1px solid black;
-}
-
-legend {
-font-size: 25px;
-text-align: center;
-}
-form ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-#name li {
-display: inline-block;
-margin-right: 20px;
-}
-form label {
-font-weight: 500;
-font-size: 16px;
-}
-form input {
-margin-bottom: 15px;
-margin-top: 3px;
-}
-.gendertext {
-font-weight: normal;
-font-size: 14.5px;
-}
-
-#checklist {
-margin: 5px 0 5px 0;
-}
-#checklist label {
-font-weight: normal;
-font-size: 14.5px;
-}
-
-textarea {
-margin-top: 3px;
-height: 100px;
-width: 400px;
-padding: 10px;
-}
-
-#submit {
-margin: 2.5vw auto auto auto;
-padding: 14px;
-font-size: 14px;
-text-align: center;
-background-color: white;
-box-shadow: 0px 2px 2px 0px rgba(179, 177, 178, 0.65);
-display: block;
-width: 20vw;
-}
-
-#submit:hover {
-background-color: rgba(175, 168, 168, 0.656);
-}
-/* css for apply.html*/
-
-/* css for about.html */
-#header {
-text-align: center;
-text-transform: uppercase;
-color: white;
-margin-bottom: 5px;
-border-radius: 10px 10px 0 0;
-}
-.group {
-padding: 1vw;
-margin: 3vw 2vw 4vw 2vw;
-border-radius: 10px;
-box-shadow: 5px 5px 10px gray;
-background-color: rgba(32, 77, 173, 0.438);
-}
-
-.group img {
-height: 25%;
-width: 100%;
-}
-
-.group dl {
-padding-left: 1%;
-}
-
-.profile {
-box-shadow: 5px 5px 10px gray;
-margin: 3.5vw;
-border-radius: 10px;
-}
-
-.row1,
-.row2 {
-padding: 2%;
-}
-.row2 {
-padding-top: 0;
-}
-.row1 {
-column-count: 2;
-}
-
-dl {
-font-size: 18px;
-margin: 15px;
-}
-
-dl a {
-text-decoration: none;
-color: blue;
-}
-
-dl a:hover {
-color: rgb(96, 96, 96);
-}
-
-dt {
-float: left;
-font-weight: 600;
-color: rgb(13, 22, 146);
-width: 180px;
-margin-bottom: 5px;
-}
-
-dd {
-margin-bottom: 18px;
-font-weight: 500;
-width: 600px;
-text-transform:capitalize;
-}
-
-.row1 img {
-float: right;
-width: 45%;
-height: 80%;
-margin: 15px;
-border: 2px solid rgb(141, 140, 140);
-border-radius: 20px;
-}
-
-.row2 table,
-th,
-tr,
-td {
-border: 1px solid black;
-text-transform: uppercase;
-border-collapse: collapse;
-padding: 6px;
-text-align: center;
-}
-
-.row2 table {
-table-layout: fixed;
-margin: 9px;
-width: 98%;
-}
-
-.row2 th {
-font-weight: bold;
-background-color: #6a89dff3;
-}
-
-.row2 td {
-width: 20%;
-background-color: #dbdbdba3;
-}
-
-/* css for about.html */
-
-
-/* enhancements page */
-
-#enhance-h1{
-  text-align: center;
-  margin-top:40px;
-  font-weight: 600;
-}
-
-.e-container{
-  background-color: rgba(32, 77, 173, 0.438);
-  box-shadow: 5px 5px 10px gray;
-  border-radius:10px;
-  margin:45px 5vw 80px 5vw;
-  padding:10px;
-}
-
-.e-container h2{
-  text-align: center;
-  font-weight: 500;
-}
-.detail{
-  margin:5px;
-  padding:20px;
-  font-size: 18px;
-  background-color: white;
-}
-#container-2{
-  margin-bottom: 100px;
-}
-
-
 /* css for jobs.html */
 .job-container {
   margin:3vw;
   box-shadow: 5px 5px 10px gray;
   height:800px;
- 
 
 }
 #job-container-1{
@@ -546,6 +334,235 @@ aside{
   opacity: 1;
   right: 0;
 }
+/* css for jobs.html */
+
+/*css for apply.html */
+
+form {
+margin: 3vw 4vw 2vw 4vw;
+color: #474747;
+}
+
+fieldset {
+background-color: white;
+padding: 25px;
+border: 1px solid black;
+}
+
+legend {
+font-size: 25px;
+text-align: center;
+}
+form ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#name li {
+display: inline-block;
+margin-right: 20px;
+}
+form label {
+font-weight: 500;
+font-size: 16px;
+}
+form input {
+margin-bottom: 15px;
+margin-top: 3px;
+}
+.gendertext {
+font-weight: normal;
+font-size: 14.5px;
+}
+
+#checklist {
+margin: 5px 0 5px 0;
+}
+#checklist label {
+font-weight: normal;
+font-size: 14.5px;
+}
+
+textarea {
+margin-top: 3px;
+height: 100px;
+width: 400px;
+padding: 10px;
+}
+
+#submit {
+margin: 2.5vw auto auto auto;
+padding: 14px;
+font-size: 14px;
+text-align: center;
+background-color: white;
+box-shadow: 0px 2px 2px 0px rgba(179, 177, 178, 0.65);
+display: block;
+width: 20vw;
+}
+
+#submit:hover {
+background-color: rgba(175, 168, 168, 0.656);
+}
+/* css for apply.html*/
+
+/* css for about.html */
+#header {
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 5px;
+border-radius: 10px 10px 0 0;
+}
+.group {
+padding: 1vw;
+margin: 3vw 2vw 4vw 2vw;
+border-radius: 10px;
+box-shadow: 5px 5px 10px gray;
+background-color: rgba(32, 77, 173, 0.438);
+}
+
+.group img {
+height: 25%;
+width: 100%;
+}
+
+.group dl {
+padding-left: 1%;
+}
+
+.profile {
+box-shadow: 5px 5px 10px gray;
+margin: 3.5vw;
+border-radius: 10px;
+}
+
+.row1,
+.row2 {
+padding: 2%;
+}
+.row2 {
+padding-top: 0;
+}
+.row1 {
+column-count: 2;
+}
+
+dl {
+font-size: 18px;
+margin: 15px;
+}
+
+dl a {
+text-decoration: none;
+color: blue;
+}
+
+dl a:hover {
+color: rgb(96, 96, 96);
+}
+
+dt {
+float: left;
+font-weight: 600;
+color: rgb(13, 22, 146);
+width: 180px;
+margin-bottom: 5px;
+}
+
+dd {
+margin-bottom: 18px;
+font-weight: 500;
+width: 600px;
+text-transform: capitalize ;
+}
+
+.row1 img {
+float: right;
+width: 45%;
+height: 80%;
+margin: 15px;
+border: 2px solid rgb(141, 140, 140);
+border-radius: 20px;
+}
+
+.row2 table,
+th,
+tr,
+td {
+border: 1px solid black;
+text-transform: uppercase;
+border-collapse: collapse;
+padding: 6px;
+text-align: center;
+}
+
+.row2 table {
+table-layout: fixed;
+margin: 9px;
+width: 98%;
+}
+
+.row2 th {
+font-weight: bold;
+background-color: #6a89dff3;
+}
+
+.row2 td {
+width: 20%;
+background-color: #dbdbdba3;
+}
+
+/* css for about.html */
+
+
+/* enhancements page */
+
+.enhance-container{
+  margin:3vw;
+  box-shadow: 5px 5px 10px gray;
+ text-align: center;
+  padding-bottom:10px;
+}
+
+.enhance-header{
+  background-color: rgba(32, 77, 173, 0.438);
+  padding:10px;
+}
+
+.enhance-table {
+  margin:50px;
+}
+
+.enhance-table table{
+  border-collapse: collapse;
+  width:100%;
+}
+
+.enhance-table td{
+  padding:15px;
+  border:2px double solid;
+  width:100px;
+}
+
+
+.table-col1{
+  text-transform: capitalize;
+  
+}
+
+.table-col2{
+  text-transform: none;
+}
+.enhance-table a{
+  color:blue;
+  font-weight:600;
+  text-transform: capitalize;
+}
+.enhance-table a:hover{
+  color:rgb(74, 74, 74);
+}
+/* enhancements page */
+
 
 /* media queries*/
 @media all and (max-width: 1000px) {
@@ -595,7 +612,6 @@ table{
 }
 }
 
-/* for tablets */ 
 @media all and (max-width: 900px) {
 .text h1{
 font-size: 70px;
@@ -626,17 +642,6 @@ font-size: 10px;
 width:10px;
 }
 
-#enhance-h1{
-font-size: 27px;
-}
-.e-container h2{
-font-size:17px;
-
-}
-.detail {
-font-size:12px;
-}
-
 .jobtitle{
   font-size: 14px;
 }
@@ -654,9 +659,21 @@ section h2{
   width:150px;
   font-size: 14px;
 }
+.enhance-table{
+  margin:35px;
+}
+.enhance-header{
+  font-size:14px;
+}
+.enhance-table td{
+  padding:10px;
+  font-size:12px;
+}
 }
 
-/* for phones */
+
+
+
 @media (max-width:480px){
   .group dl {
     margin-top: 1vw;
@@ -711,5 +728,6 @@ section h2{
   .paragraphbody, .jobslist ul{
     font-size:10px;
   }
-}
 
+  
+}
