@@ -593,6 +593,7 @@ table{
 }
 }
 
+/* for tablets */ 
 @media all and (max-width: 900px) {
 .text h1{
 font-size: 70px;
@@ -653,9 +654,7 @@ section h2{
 }
 }
 
-
-
-
+/* for phones */
 @media (max-width:480px){
   .group dl {
     margin-top: 1vw;
