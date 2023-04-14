@@ -4,7 +4,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.nav {
+.backgroundcolor {
   background: linear-gradient(45deg, #b93db3, #8432aa, #23a6d5, #3da089);
   background-size: 200% 200%;
   animation: gradient 20s ease infinite;
