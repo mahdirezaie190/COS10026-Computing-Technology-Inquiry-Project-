@@ -265,29 +265,25 @@ aside{
 }
 
 .jobslist{
-  margin-left: 25px;
+  margin-left: 0 0 20px 25px;
   padding-left: 23px;
   padding-bottom: 5px;
   float: left;
+  clear:left;
 }
 
-.jobslist-1{
+.responsibilities{
   float:left;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-.jobslist-1 ol{
+.responsibilities ol{
   margin-left: 40px;
   font-size:15px;
   
 
 }
 
-.jobslist{
-  clear:left;
-  margin-bottom: 20px;
-  padding:0;
-}
 .jobslist ul{
   font-size:15px;
   margin-left: 30px;
