@@ -232,6 +232,9 @@ color: white;
 .jobtitle{
   background-color: rgba(32, 77, 173, 0.438);
   padding:10px;
+  font-family: 'Roboto', sans-serif;
+  font-variant: normal;
+  font-size: 105%;
 }
 
 .JobMisc{
