@@ -4,7 +4,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.backgroundcolor {
+nav {
   background: linear-gradient(45deg, #b93db3, #8432aa, #23a6d5, #3da089);
   background-size: 200% 200%;
   animation: gradient 20s ease infinite;
@@ -26,7 +26,6 @@
 .text {
 background-image: url(../styles/images/image.webp);
 background-repeat: no-repeat;
-text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.39);
 background-size: cover;
 padding: 20vw;
 width: 100;
@@ -39,12 +38,10 @@ line-height: 0.9em;
 margin-bottom: 15px;
 
 }
-  .text h3 {
-      font-weight: 400;
-      font-size: 20px;
-      padding: 0px 200px;
-  }
-
+.text h3 {
+font-weight: 400;
+font-size: 25px;
+}
 
 .btn {
 background-color: rgba(255, 255, 255, 0.212);
@@ -58,7 +55,17 @@ cursor: pointer;
 border-radius: 15px;
 text-align: center;
 }
-.btn:hover {
+.job-button{
+  padding:20px 5px 20px 5px;
+  background-color: #93939372;
+  width:10vw;
+  border-radius: 10px;
+  margin:20px auto 0 auto;
+  
+}
+
+
+.job-button:hover {
   background-color: rgba(255, 255, 255, 0.212);
   opacity: 0.5;
 }
@@ -74,6 +81,7 @@ a:visited {
 
 /* css for navbar */
 nav {
+  background-color: rgba(32, 77, 173, 0.438);
   display: flex;
 }
 
@@ -125,7 +133,6 @@ nav ul li a {
   text-decoration: none;
   transition: 0.4s;
 }
-
 
 /* css for navbar */
 
@@ -231,9 +238,6 @@ color: white;
 .jobtitle{
   background-color: rgba(32, 77, 173, 0.438);
   padding:10px;
-  font-family: 'Roboto', sans-serif;
-  font-variant: normal;
-  font-size: 105%;
 }
 
 .JobMisc{
@@ -258,7 +262,7 @@ aside{
   border-radius: 14px;
   padding: 10px;
   margin-left:10px;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   width: 25%;
   float: right;
   font-size: 12px;
@@ -291,7 +295,7 @@ aside{
   margin-left: 30px;
   clear:left;
 }
-.button {
+.apply-button {
   border-radius: 4px;
   border: 1px solid black;
   text-align: center;
@@ -305,18 +309,18 @@ aside{
   font-style: oblique;
   font-family: 'Monaco', 'Lucidia Console', 'monospace';
 }
-.button a{
+.apply-button a{
   color:black;
 }
 
-.button span {
+.apply-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 500ms;
 }
 
-.button span:after {
+.apply-button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -325,11 +329,11 @@ aside{
   transition: 500ms;
 }
 
-.button:hover span {
+.apply-button:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.apply-button:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -619,9 +623,10 @@ margin-bottom: 10px;
 .text h3{
 font-size:18px;
 }
-.btn{
+.job-button{
 width:150px;
 font-size: 13px;
+padding:15px 0 15px 0;
 }
 nav {
 padding: 4px 30px;
@@ -654,7 +659,7 @@ width:10px;
 section h2{
   font-size: 15px;
 }
-.button{
+.apply-button{
   width:150px;
   font-size: 14px;
 }
