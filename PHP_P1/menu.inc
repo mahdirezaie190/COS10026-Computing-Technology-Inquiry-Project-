@@ -1,5 +1,5 @@
 <nav class="backgroundcolor">
-  <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+  <a href="index.php"><img class="logo" src="images/logo.png" alt="logo"></a>
   <ul>
         <li class="expand"></li>
         <li class="items"><a href="index.php">Home</a></li>
