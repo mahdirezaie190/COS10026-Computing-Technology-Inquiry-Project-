@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
 
 <?php 
 $title="Welcome to Code Crafters";
@@ -8,9 +6,10 @@ include 'header.inc';
 
 <body>
 
+
 <?php 
 include 'menu.inc';
-?> 
+?>
 
     <div class="text">
         <div class="maintext">

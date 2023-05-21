@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
 
 <?php 
 $title="Job Descriptions";
@@ -10,8 +8,7 @@ include 'header.inc';
 
 <?php 
 include 'menu.inc';
-?> 
-     
+?>
     <hr />
 
      <div class="job-container" id="job-container-1">

@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
 
 <?php
+//apply.php needs this line of code so EOI number can be passed from processEOI//
+session_start();
 $title="Job Application Form";
 include 'header.inc';
 ?> 
@@ -10,21 +10,26 @@ include 'header.inc';
 
 <?php 
 include 'menu.inc';
-?> 
+?>
 
    <form method="post" action="https://mercury.swin.edu.au/cos10026/s104356422/assign2/processEOI.php" novalidate = "novalidate">
         <fieldset>
                 <legend>Job Application Form</legend>
                <!-- blank field error -->
-               <p id=fill-error>
-
                <?php 
-                $fullURL= "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-                if (strpos($fullURL, "apply=empty")==  true){
-                    echo "&#42;Please fill in all fields";
-                }
+                    $fullURL= "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                    if (strpos($fullURL, "apply=empty")==  true){
+                        echo " <p id=fill-error>&#42;Please fill in all fields</p>";
+                    }
+                    if (strpos($fullURL, "success=true")==  true){
+                        $eoi = $_SESSION['eoi_number'];
+                        echo"
+                        <div class=\"success-msg\">
+                            <p id=\"eoi-text\">EOI Number: $eoi </p>
+                            <p>Your application has been submitted.</p>
+                        </div>";
+                    }
                 ?>
-                </p>
 
 
                 <label for="refnum">Job Reference Number</label><br>
@@ -273,6 +278,7 @@ include 'menu.inc';
 
     
     <input type= "submit" value="APPLY" id="submit">
+    
         
     </form>
 

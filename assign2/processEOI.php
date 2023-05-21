@@ -1,4 +1,5 @@
 <?php
+session_start();
     function sanitise_data($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -12,6 +13,7 @@
          echo"Database connection failure</p>";
     }
     else{
+        
 //assign values from html form to php variables 
         $getvalues = True;
         //ref num
@@ -145,7 +147,6 @@
         }
        
         //other skills
-        $other_skills = $_POST["other_skills"];
         if (!isset($_POST["other_skills"])){
             $other_skills_text = null;
         }
@@ -334,28 +335,34 @@
                 header($url);
                 exit();
             }
-        
+            else{
 
-
+            
                 //create table 
                 $sql_table = "EOI";
-
                 // SQL query to insert data into the database
-                $query = "INSERT INTO $sql_table (jobRefNumber,firstName, lastName, streetAddress, suburb, state, postcode, email, phoneNumber,skills,otherSkills) VALUES ('$refnum','$fname', '$lname', '$street', '$suburb', '$state', '$postcode' ,'$email', '$number','$skill_str','$other_skills_text')";
-
+                $query = "INSERT INTO $sql_table (jobRefNumber,firstName, lastName, streetAddress, suburb, state, postcode, email, phoneNumber,skills,otherSkills,status) VALUES ('$refnum','$fname', '$lname', '$street', '$suburb', '$state', '$postcode' ,'$email', '$number','$skill_str','$other_skills_text','new')";
                 //execute the query and store result into the result pointer
                 $result = mysqli_query($conn,$query);
-
+                
                 //checks if query is successfuly executed
                 if (!$result){
                     echo"<p class=\"wrong\">Something is wrong with ", $query, "</p>";
                 }
                 else{
-                    echo"<p class=\"ok\">Successfully added new record to EOI table.</p>";
+                    //query to get EOI number
+                    $query = "SELECT * FROM `EOI` WHERE firstName = '$fname' AND lastName='$lname';";
+                    $result = mysqli_query($conn,$query);
+                    $eoi_number = mysqli_fetch_assoc($result);
+                    $_SESSION['eoi_number']= $eoi_number['EOI_number'];
+                    header('Location: ../assign2/apply.php?success=true');
                 }
+                mysqli_free_result($result);
 
                 //close database connection
                 mysqli_close($conn);
+            }
+            
             
 
         } //bracket for if all values are fetched

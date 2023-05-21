@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
 
 <?php 
 $title="Website Enhancements";
@@ -8,9 +6,10 @@ include 'header.inc';
 
 <body>
 
+
 <?php 
 include 'menu.inc';
-?> 
+?>
 
     <div class="enhance-container">
     <div class="enhance-header">

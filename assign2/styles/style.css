@@ -425,7 +425,7 @@ background-color: rgba(32, 77, 173, 0.438);
 }
 
 .group img {
-height: 25%;
+height: 100%;
 width: 100%;
 }
 
@@ -566,6 +566,71 @@ background-color: #dbdbdba3;
 }
 /* enhancements page */
 
+/*css for login.html */
+
+.login-container{
+  width:400px;
+  margin: 50px auto 200px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+
+
+}
+.login-form{
+  width:350px;
+  padding:10px;
+  margin: 10px 20px 10px 30px;
+
+
+}
+
+ .login-title{
+  text-align: center;
+  background-color: rgba(32, 77, 173, 0.438);
+  padding:10px 0 10px 0;
+  border-radius: 5px 5px 0 0 ;
+  margin-bottom: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+  width: 65%;
+  background-color:rgba(32, 77, 173, 0.438);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:14px;
+  padding:13px;
+  margin-left:40px;
+  margin-right:auto;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: rgba(5, 46, 135, 0.685);
+  
+}
+
+
+#login-msg{
+  color: rgb(218, 77, 77);
+  margin-bottom:15px;
+  margin-left:50px;
+
+}
+
+/*css for login.html */
+
+
 
 /* media queries*/
 @media all and (max-width: 1000px) {
@@ -673,6 +738,9 @@ section h2{
   padding:10px;
   font-size:12px;
 }
+.login label{
+  font-size:15px;
+}
 }
 
 
@@ -735,6 +803,7 @@ section h2{
 
   
 }
+/* styling for error msgs */
 #fill-error{
   color:red;
   margin-bottom: 5px;
@@ -743,3 +812,16 @@ section h2{
   color:Red;
   margin-left: 5px;
 }
+.success-msg{
+  background-color: rgba(37, 162, 37, 0.408);
+  margin:2px auto 20px auto;
+  padding:5px;
+}
+.success-msg p{
+  margin-left: 5px;
+}
+
+#eoi-text{
+  font-weight:900;
+}
+

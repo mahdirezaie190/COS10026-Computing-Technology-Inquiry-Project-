@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
 
 <?php 
 $title="About Page";
@@ -10,7 +8,7 @@ include 'header.inc';
 
 <?php 
 include 'menu.inc';
-?> 
+?>
 
     <div class="group">
         <h1 id="header"> meet the team!</h1>
@@ -529,3 +527,4 @@ include 'footer.inc';
 </body>
 
 </html>
+
