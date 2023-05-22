@@ -148,7 +148,7 @@ session_start();
        
         //other skills
         if (!isset($_POST["other_skills"])){
-            $other_skills_text = null;
+            $other_skills_text = ' ';
         }
         else{
             $other_skills_text = sanitise_data($_POST["other_skills_text"]);
@@ -340,8 +340,9 @@ session_start();
             
                 //create table 
                 $sql_table = "EOI";
+                $status ="new";
                 // SQL query to insert data into the database
-                $query = "INSERT INTO $sql_table (jobRefNumber,firstName, lastName, streetAddress, suburb, state, postcode, email, phoneNumber,skills,otherSkills,status) VALUES ('$refnum','$fname', '$lname', '$street', '$suburb', '$state', '$postcode' ,'$email', '$number','$skill_str','$other_skills_text','new')";
+                $query = "INSERT INTO $sql_table (jobRefNumber,firstName, lastName, streetAddress, suburb, state, postcode, email, phoneNumber,skills,otherSkills) VALUES ('$refnum','$fname', '$lname', '$street', '$suburb', '$state', '$postcode' ,'$email', '$number','$skill_str','$other_skills_text')";
                 //execute the query and store result into the result pointer
                 $result = mysqli_query($conn,$query);
                 
